@@ -1,0 +1,22 @@
+<input id="email" placeholder="email">
+<input id="password" placeholder="password">
+<button onclick="login()">Login</button>
+
+<script>
+let token = "";
+
+async function login() {
+  const res = await fetch("http://localhost:5000/api/v1/auth/login", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      email: email.value,
+      password: password.value
+    })
+  });
+
+  const data = await res.json();
+  token = data.token;
+  alert("Logged in!");
+}
+</script>
