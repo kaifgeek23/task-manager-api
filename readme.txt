@@ -1,6 +1,6 @@
 # 🚀 Task Manager API (Full Stack Project)
 
-## 📌 Overview
+## 📖 Overview
 
 This project is a **full-stack Task Manager application** built as part of a backend developer assignment.
 It includes secure authentication, role-based access, and CRUD operations with a modern frontend UI.
@@ -44,20 +44,22 @@ It includes secure authentication, role-based access, and CRUD operations with a
 
 ## 🛠️ Tech Stack
 
-**Frontend:**
+### Frontend
 
-* HTML, CSS, JavaScript
+* HTML
+* CSS
+* JavaScript
 
-**Backend:**
+### Backend
 
 * Node.js
 * Express.js
 
-**Database:**
+### Database
 
 * MongoDB (Mongoose)
 
-**Authentication:**
+### Authentication
 
 * JWT (JSON Web Tokens)
 * bcrypt
@@ -66,7 +68,6 @@ It includes secure authentication, role-based access, and CRUD operations with a
 
 ## 📂 Project Structure
 
-```
 Backend Project/
 │── backend/
 │   ├── models/
@@ -78,56 +79,44 @@ Backend Project/
 │   ├── index.html
 │
 │── README.md
-```
 
 ---
 
-## 🚀 Getting Started
+## ⚙️ Installation & Setup
 
-### 1️⃣ Clone Repository
+### Step 1: Clone Repository
 
-```
 git clone https://github.com/your-username/task-manager-api.git
 cd task-manager-api
-```
 
 ---
 
-### 2️⃣ Install Backend Dependencies
+### Step 2: Install Backend Dependencies
 
-```
 cd backend
 npm install
-```
 
 ---
 
-### 3️⃣ Setup Environment Variables
+### Step 3: Setup Environment Variables
 
 Create a `.env` file inside backend:
 
-```
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
-```
 
 ---
 
-### 4️⃣ Run Backend
+### Step 4: Run Backend
 
-```
 node server.js
-```
 
 Server runs on:
-
-```
 http://localhost:5000
-```
 
 ---
 
-### 5️⃣ Run Frontend
+### Step 5: Run Frontend
 
 * Open `index.html` manually
   OR
@@ -139,18 +128,14 @@ http://localhost:5000
 
 ### Auth Routes
 
-```
 POST /api/v1/auth/register
 POST /api/v1/auth/login
-```
 
 ### Task Routes (Protected)
 
-```
 GET    /api/v1/tasks
 POST   /api/v1/tasks
 DELETE /api/v1/tasks/:id
-```
 
 ---
 
@@ -198,5 +183,3 @@ This project demonstrates:
 * API design & security
 * Full-stack integration
 * Problem-solving under real-world constraints
-
----
